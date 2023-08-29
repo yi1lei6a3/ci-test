@@ -1,12 +1,12 @@
 import sum from '../basic';
 
+import getHealthStatus from '../app';
+
 test('should sum', () => {
   const result = sum([1, 2, 3]);
 
   expect(result).toBe(6);
 });
-
-import getHealthStatus from '../app';
 
 test('health status is healthy when health > 50', () => {
   const character = { name: 'Mage', health: 90 };

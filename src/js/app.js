@@ -1,18 +1,10 @@
 function getHealthStatus(character) {
-    if (character.health > 50) {
-      return 'healthy';
-    } else if (character.health >= 15) {
-      return 'wounded';
-    } else {
-      return 'critical';
-    }
+  if (character.health > 50) {
+    return 'healthy';
+  } if (character.health >= 15) {
+    return 'wounded';
   }
-  
-  export default getHealthStatus;
+  return 'critical';
+}
 
-import sum from './basic';
-
-// console.log('worked');
-
-// console.log(sum([1, 2]));
-
+export default getHealthStatus;
